@@ -2,7 +2,7 @@
 
 All notable changes to `ua-parser-modern-php` will be documented in this file.
 
-## 0.1.1 - Unreleased
+## 0.1.1 - 2026-03-20
 
 - Initial release
 - Full PHP port of ua-parser-modern v0.1.1 regex engine

@@ -1,0 +1,53 @@
+{
+    "name": "flycro/ua-parser-modern-php",
+    "description": "PHP port of ua-parser-modern - detect browser, engine, OS, CPU and device from User-Agent strings",
+    "keywords": [
+        "user-agent",
+        "parser",
+        "browser",
+        "device",
+        "os",
+        "cpu"
+    ],
+    "homepage": "https://github.com/flycro/ua-parser-modern-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flycro",
+            "email": "hi@flycro.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "pestphp/pest": "^4.0",
+        "phpstan/phpstan": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "UaParserModern\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UaParserModern\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,61 @@
+parameters:
+	ignoreErrors:
+		-
+			message: '#^Argument of an invalid type mixed supplied for foreach, only iterables are supported\.$#'
+			identifier: foreach.nonIterable
+			count: 2
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Binary operation "\+" between mixed and 1 results in an error\.$#'
+			identifier: binaryOp.invalid
+			count: 1
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Method UaParserModern\\UserAgentParser\:\:rgxMapper\(\) should return array\<string, string\|null\> but returns array\.$#'
+			identifier: return.type
+			count: 2
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Parameter \#1 \$pattern of function preg_match expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 1
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Parameter \#1 \$pattern of function preg_replace expects array\<string\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Parameter \#1 \$string of function trim expects string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Parameter \#2 \$replacement of function preg_replace expects array\<float\|int\|string\>\|string, mixed given\.$#'
+			identifier: argument.type
+			count: 2
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Possibly invalid array key type mixed\.$#'
+			identifier: offsetAccess.invalidOffset
+			count: 5
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Static property UaParserModern\\UserAgentParser\:\:\$windowsVersionMap \(array\<string, array\<int, string\>\|string\>\) does not accept default value of type array\<int\|string, list\<string\>\|string\>\.$#'
+			identifier: property.defaultValue
+			count: 1
+			path: src/UserAgentParser.php
+
+		-
+			message: '#^Trying to invoke mixed but it''s not a callable\.$#'
+			identifier: callable.nonCallable
+			count: 1
+			path: src/UserAgentParser.php
